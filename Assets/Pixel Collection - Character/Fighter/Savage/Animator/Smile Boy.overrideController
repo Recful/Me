@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Smile Boy
+  m_Controller: {fileID: 9100000, guid: 51eb82a7217eacb419dd42749028c5ad, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ae50aff9235503f408f78422f47ff7c2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 53dec84534bff8b4e83a68979a391456, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 07e02e497ed4f244699290979908dcc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 408f9e384bd582e44b6bd12fa3440404, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a0ae23ff99ab8b444bdb29764b7f4d7d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 433a14980e474114da155e1a8741ede4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f9f1ea70d368fe4b83b582d253073ea, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6f436aa03fdc62f4093f44d7cc63e653, type: 2}

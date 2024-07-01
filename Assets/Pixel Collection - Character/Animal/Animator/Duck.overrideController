@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Duck
+  m_Controller: {fileID: 9100000, guid: f453633e0a3c18149bd971ef3ca2612f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: eb2a3ac3e14c639498b9ec6fcd3bd348, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8af05599535dbb742afcd9fa1245e49f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: dc19d3df751c22e4cb20aecd41fd7a95, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 921c711d8a6ad074a876bca61aba03ab, type: 2}

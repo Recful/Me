@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Spiner Boy
+  m_Controller: {fileID: 9100000, guid: 51eb82a7217eacb419dd42749028c5ad, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ae50aff9235503f408f78422f47ff7c2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b367ec2351b0e0348901d67b0357a116, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 07e02e497ed4f244699290979908dcc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7394f4ef0fb149b439821ca9eb7da5da, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a0ae23ff99ab8b444bdb29764b7f4d7d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7dc41af3d5a32ac4796af18b77b98315, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f9f1ea70d368fe4b83b582d253073ea, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ca29746ff46ff9644b4c9b5fc13918db, type: 2}

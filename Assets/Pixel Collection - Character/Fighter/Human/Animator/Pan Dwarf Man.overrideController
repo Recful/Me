@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pan Dwarf Man
+  m_Controller: {fileID: 9100000, guid: 51eb82a7217eacb419dd42749028c5ad, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ae50aff9235503f408f78422f47ff7c2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 11b5e65bb040bc648904c81373e3ba99, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 07e02e497ed4f244699290979908dcc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bc611cad951ba9c4489353a79f08a665, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a0ae23ff99ab8b444bdb29764b7f4d7d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 48b72e3518b2b8b4e8563eb9c95468bd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f9f1ea70d368fe4b83b582d253073ea, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 38ddb40314e704b47bae58e4007927b8, type: 2}

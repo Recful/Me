@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rod Soldier
+  m_Controller: {fileID: 9100000, guid: 51eb82a7217eacb419dd42749028c5ad, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ae50aff9235503f408f78422f47ff7c2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dffbc4ce8f63d174394bd1357ac9a438, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 07e02e497ed4f244699290979908dcc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 487519818a8639040ac4e259e8597180, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a0ae23ff99ab8b444bdb29764b7f4d7d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: df57cf9d8514d1f4fa1e97e79399fe53, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f9f1ea70d368fe4b83b582d253073ea, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b34466a6b9ce4304eb904c2a86008ba9, type: 2}

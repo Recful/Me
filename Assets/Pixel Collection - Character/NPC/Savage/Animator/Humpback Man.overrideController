@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Humpback Man
+  m_Controller: {fileID: 9100000, guid: 588e5d1e968831b4ca72c80ab5cff043, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 3ea5b615bdbd2a642bf6d1ad11961a36, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1fcc8f9dd9762d34db5b1eb110ec1810, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c4242204fbd8fbc41966a05f55307fa2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e2006e1b479adc249a94577388a7cdd0, type: 2}
