@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter 1 office scene.unity
     guid: 45f36069380bbed439cfd4f533c2bdd9
-  - enabled: 0
-    path: Assets/Scenes/Card battle(+tutorial).unity
-    guid: 557f630e81399e34da1c488fc5a0876a
+  - enabled: 1
+    path: Assets/Scenes/card battle1.unity
+    guid: a937790267126ce4aaf60f3d2bd26097
   - enabled: 1
     path: Assets/Scenes/Chapter1 go home.unity
     guid: 7d23f1ec0eaf35647afbe7dadc128a48
@@ -30,9 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter1 office2.2.unity
     guid: 731c54137e2e40541874577305c2ebfb
   - enabled: 1
+    path: Assets/Scenes/Jump.unity
+    guid: 6262740d2de02e94c9132737ad919578
+  - enabled: 1
     path: Assets/Scenes/chapter1 office2.3.unity
     guid: 9ff1f054a61cc6f4b84ee48cdf2ffe5e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/card battle2.unity
     guid: dd8dfdf922ed5014d804898159a0c053
   - enabled: 1
@@ -51,9 +54,12 @@ EditorBuildSettings:
     path: Assets/Scenes/day 3 office.unity
     guid: c6324568dc706184aace82d0569519f2
   - enabled: 1
+    path: Assets/Scenes/Jump 2.unity
+    guid: 17591084efe58f14194ae5b2a027c452
+  - enabled: 1
     path: Assets/Scenes/day 3 office 2.unity
     guid: a7707d43fc800184dbdf241d9cd0224d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/card battle 3.unity
     guid: e352bae2a57b4514eafbc5159eb8f9b3
   - enabled: 1

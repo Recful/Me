@@ -83,55 +83,55 @@ public class interactable2 : MonoBehaviour
             levelLoader.LoadNextLevel();
         }
         //enter the card battle 2
-        if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && Getname.currentSpeaker == "Nate" && SceneManager.GetActiveScene().buildIndex == 8)
+        if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && Getname.currentSpeaker == "Nate" && SceneManager.GetActiveScene().buildIndex == 9)
         {
             levelLoader.LoadNextLevel();
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         //enter the home2 scene
-        if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 10)
+        if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 11)
         {
             levelLoader.LoadNextLevel();
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         //enter day3 scene
-        if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 11)
-        {
-            levelLoader.LoadNextLevel();
-        }
-        //enter day3 bus scene
         if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 12)
         {
             levelLoader.LoadNextLevel();
         }
-        //enter day3 office
+        //enter day3 bus scene
         if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 13)
         {
             levelLoader.LoadNextLevel();
         }
         //enter day3 office
-        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 14)
+        if(Input.GetKeyDown(KeyCode.E) == true && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 14)
         {
             levelLoader.LoadNextLevel();
         }
-        //enter the card battle 2
+        //enter day3 office
         if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 15)
         {
             levelLoader.LoadNextLevel();
         }
-        //enter day3 home1
+        //enter the card battle 2
         if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 17)
         {
             levelLoader.LoadNextLevel();
         }
+        //enter day3 home1
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 19)
+        {
+            levelLoader.LoadNextLevel();
+        }
         //enter day3 home2
-        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 18)
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 20)
         {
             levelLoader.LoadNextLevel();
         }
 
         // enter the UI Animation END OF CHAPTER1
-        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 19)
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 21)
         {
             SleepUIBlack.SetActive(true);
             Invoke("showComet", showCometTime);

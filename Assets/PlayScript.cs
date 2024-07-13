@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayScript : MonoBehaviour
 {
@@ -25,9 +26,11 @@ public class PlayScript : MonoBehaviour
     void Update()
     {
         elapsedTime += Time.deltaTime;
-        if(portal.hit == true)
-        {
-            volumControl();
+        if (SceneManager.GetActiveScene().buildIndex != 0){
+            if(portal.hit == true)
+            {
+                volumControl();
+            }
         }
     }
 
