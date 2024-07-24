@@ -137,6 +137,45 @@ public class interactable2 : MonoBehaviour
             Invoke("showComet", showCometTime);
             
         }
+        
+        // Chapter 2 Day 4 start C2D4_1
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 22)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
+        // Chapter 2 Day 4 start C2D4_2
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 23)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
+        // Chapter 2 Day 4 start C2D4_3
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 24)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
+        // Chapter 2 Day 4 start C2D4_4 (done the jump game)
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 26)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
+        // Chapter 2 Day 4 start C2D4_5
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 27)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
+        // Chapter 2 Day 5 start C2D5_1
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 28)
+        {
+            //play jump slipt game, scene 29
+            levelLoader.LoadNextLevel();
+        }
+
+
     }
     void showComet()
     {
@@ -171,7 +210,7 @@ public class interactable2 : MonoBehaviour
     }
     void returnToMain()
     {
-        SceneManager.LoadScene("main title animation");
+        levelLoader.LoadNextLevel();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
