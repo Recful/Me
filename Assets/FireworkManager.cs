@@ -9,6 +9,7 @@ public class FireworkManager : MonoBehaviour
 
     public GameObject firework1;
     public GameObject firework2;
+    public GameObject firework3;
     private bool isPlaying = false;
     // Start is called before the first frame update
     void Start()
@@ -36,9 +37,12 @@ public class FireworkManager : MonoBehaviour
             firework1.SetActive(true);
             yield return new WaitForSeconds(0.5f);
             firework2.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            firework3.SetActive(true);
             yield return new WaitForSeconds(1.5f);
             firework1.SetActive(false);
             firework2.SetActive(false);
+            firework3.SetActive(false);
             float randomDelay = Random.Range(1f, 5f);
             yield return new WaitForSeconds(randomDelay);
         }
