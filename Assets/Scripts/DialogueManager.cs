@@ -14,8 +14,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> names;
     public bool endConversation = false;
     public string currentSpeaker;
-
-
+    [SerializeField] private TimelineSignalReceiver timelineSignalReceiver;
 
     // Start is called before the first frame update
     void Start()
@@ -77,5 +76,9 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         endConversation = true;
+        if(timelineSignalReceiver)
+        {
+            timelineSignalReceiver.ContinueTimeline();
+        }
     }
 }
