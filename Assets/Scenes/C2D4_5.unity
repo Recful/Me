@@ -14631,6 +14631,7 @@ MonoBehaviour:
   animator: {fileID: 1939441974}
   endConversation: 0
   currentSpeaker: 
+  timelineSignalReceiver: {fileID: 0}
 --- !u!4 &1779490132
 Transform:
   m_ObjectHideFlags: 0

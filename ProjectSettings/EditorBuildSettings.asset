@@ -98,7 +98,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/C3D6_1.unity
     guid: e6f365c1fd19bed4cbf5fabbab38275f
-  - enabled: 1
-    path: Assets/Scenes/C3D6_2.unity
-    guid: b6f3314873b7b4c4ebe7f2fdff8ef542
   m_configObjects: {}

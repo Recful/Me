@@ -2852,6 +2852,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3868872608073055420, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3868872608343284257, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -9207,6 +9211,14 @@ PlayableDirector:
     value: {fileID: 127380499628975624}
   - key: {fileID: -8861386204237619334, guid: 90d5b7b590cafac44b6a86e438b17d26, type: 2}
     value: {fileID: 127380499704443910}
+  - key: {fileID: 1725829561761845712, guid: 90d5b7b590cafac44b6a86e438b17d26, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6563892240141189505, guid: 90d5b7b590cafac44b6a86e438b17d26, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5620250817504106509, guid: 90d5b7b590cafac44b6a86e438b17d26, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2538208928317396360, guid: 90d5b7b590cafac44b6a86e438b17d26, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &462281566871359119

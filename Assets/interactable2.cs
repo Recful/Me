@@ -182,6 +182,10 @@ public class interactable2 : MonoBehaviour
         }
 
         // Chapter 3 Day 6: C3D6_2
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 31)
+        {
+            levelLoader.LoadNextLevel();
+        }
 
     }
     void showComet()
