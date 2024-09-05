@@ -11,11 +11,14 @@ public class JumperController : MonoBehaviour
     private bool isGrounded = false;
 
     public GameObject restartPanel;
+    private Animator childAnimator;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Transform childTransform = transform.Find("Graphics");
+        childAnimator = childTransform.GetComponent<Animator>();
     }
 
     void Update()
@@ -31,6 +34,7 @@ public class JumperController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            childAnimator.speed = 1;
         }
     }
 
@@ -39,6 +43,7 @@ public class JumperController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+            childAnimator.speed = 0;
         }
     }
 

@@ -9048,6 +9048,9 @@ MonoBehaviour:
   dialogueUI: {fileID: 531526948}
   conversationBubble: {fileID: 158584924}
   levelLoader: {fileID: 1398742902}
+  SleepUIBlack: {fileID: 0}
+  cometCover: {fileID: 0}
+  cometTrigger: {fileID: 0}
   Chapter1EndUI: {fileID: 0}
   endingTrigger: {fileID: 0}
   notificationUI: {fileID: 0}
@@ -9055,6 +9058,10 @@ MonoBehaviour:
   blackBackgroud: {fileID: 0}
   background: {fileID: 0}
   notificationSound: {fileID: 0}
+  cometSound: {fileID: 0}
+  showCometTime: 1
+  CometAnimationTime: 1
+  showComputerTime: 1
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1

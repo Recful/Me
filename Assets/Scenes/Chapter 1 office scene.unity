@@ -4032,6 +4032,9 @@ MonoBehaviour:
   dialogueUI: {fileID: 1939441970}
   conversationBubble: {fileID: 2053506890}
   levelLoader: {fileID: 1486558128}
+  SleepUIBlack: {fileID: 0}
+  cometCover: {fileID: 0}
+  cometTrigger: {fileID: 0}
   Chapter1EndUI: {fileID: 0}
   endingTrigger: {fileID: 0}
   notificationUI: {fileID: 0}
@@ -4039,6 +4042,10 @@ MonoBehaviour:
   blackBackgroud: {fileID: 0}
   background: {fileID: 0}
   notificationSound: {fileID: 0}
+  cometSound: {fileID: 0}
+  showCometTime: 1
+  CometAnimationTime: 1
+  showComputerTime: 1
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1
@@ -6528,6 +6535,9 @@ MonoBehaviour:
   dialogueUI: {fileID: 0}
   conversationBubble: {fileID: 1281052103}
   levelLoader: {fileID: 0}
+  SleepUIBlack: {fileID: 0}
+  cometCover: {fileID: 0}
+  cometTrigger: {fileID: 0}
   Chapter1EndUI: {fileID: 0}
   endingTrigger: {fileID: 0}
   notificationUI: {fileID: 0}
@@ -6535,6 +6545,10 @@ MonoBehaviour:
   blackBackgroud: {fileID: 0}
   background: {fileID: 0}
   notificationSound: {fileID: 0}
+  cometSound: {fileID: 0}
+  showCometTime: 1
+  CometAnimationTime: 1
+  showComputerTime: 1
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1
@@ -6709,6 +6723,9 @@ MonoBehaviour:
   dialogueUI: {fileID: 1939441970}
   conversationBubble: {fileID: 344140577}
   levelLoader: {fileID: 0}
+  SleepUIBlack: {fileID: 0}
+  cometCover: {fileID: 0}
+  cometTrigger: {fileID: 0}
   Chapter1EndUI: {fileID: 0}
   endingTrigger: {fileID: 0}
   notificationUI: {fileID: 0}
@@ -6716,6 +6733,10 @@ MonoBehaviour:
   blackBackgroud: {fileID: 0}
   background: {fileID: 0}
   notificationSound: {fileID: 0}
+  cometSound: {fileID: 0}
+  showCometTime: 1
+  CometAnimationTime: 1
+  showComputerTime: 1
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1
@@ -7835,6 +7856,7 @@ MonoBehaviour:
   animator: {fileID: 1939441974}
   endConversation: 0
   currentSpeaker: 
+  timelineSignalReceiver: {fileID: 0}
 --- !u!4 &1779490132
 Transform:
   m_ObjectHideFlags: 0
@@ -8329,7 +8351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press E to Enter the Word Battle
+  m_Text: Press E to persuade her
 --- !u!222 &1913976750
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8703,6 +8725,9 @@ MonoBehaviour:
   dialogueUI: {fileID: 1939441970}
   conversationBubble: {fileID: 158584924}
   levelLoader: {fileID: 0}
+  SleepUIBlack: {fileID: 0}
+  cometCover: {fileID: 0}
+  cometTrigger: {fileID: 0}
   Chapter1EndUI: {fileID: 0}
   endingTrigger: {fileID: 0}
   notificationUI: {fileID: 0}
@@ -8710,6 +8735,10 @@ MonoBehaviour:
   blackBackgroud: {fileID: 0}
   background: {fileID: 0}
   notificationSound: {fileID: 0}
+  cometSound: {fileID: 0}
+  showCometTime: 1
+  CometAnimationTime: 1
+  showComputerTime: 1
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1
