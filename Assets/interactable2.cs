@@ -199,6 +199,14 @@ public class interactable2 : MonoBehaviour
             levelLoader.LoadNextLevel();
         }
 
+        //phone emoji switch chat
+
+        // Chapter 3 Day 7: C3D7_1
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 34)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
     }
     void showComet()
     {
