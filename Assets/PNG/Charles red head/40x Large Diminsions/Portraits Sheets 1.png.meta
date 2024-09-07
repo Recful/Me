@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: 4253159638715476357
     second: Portraits Sheets 1_0
+  - first:
+      213: -8114306071656177586
+    second: Portraits Sheets 1_1
+  - first:
+      213: -1147818193617223449
+    second: Portraits Sheets 1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,6 +152,48 @@ TextureImporter:
       bones: []
       spriteID: 5892aae3822460b30800000000000000
       internalID: 4253159638715476357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portraits Sheets 1_1
+      rect:
+        serializedVersion: 2
+        x: 4834
+        y: 797
+        width: 1680
+        height: 1973
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4063288e91346f80800000000000000
+      internalID: -8114306071656177586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portraits Sheets 1_2
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 800
+        width: 1680
+        height: 1970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e007be2f612210f0800000000000000
+      internalID: -1147818193617223449
       vertices: []
       indices: 
       edges: []

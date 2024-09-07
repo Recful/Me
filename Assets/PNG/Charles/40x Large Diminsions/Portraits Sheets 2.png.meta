@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4060929566446622234
     second: Suprised
+  - first:
+      213: 6200582620947230459
+    second: Portraits Sheets 2_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,7 +141,7 @@ TextureImporter:
         width: 1681
         height: 1962
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,6 +149,27 @@ TextureImporter:
       bones: []
       spriteID: a169ee9cce15b5830800000000000000
       internalID: 4060929566446622234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portraits Sheets 2_1
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 790
+        width: 1691
+        height: 1968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe250aaa05ec0650800000000000000
+      internalID: 6200582620947230459
       vertices: []
       indices: 
       edges: []
