@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 public class PhoneChat : MonoBehaviour
 {
     public GameObject emojiMessagePrefabLeft;  // Prefab for a single emoji message
@@ -13,7 +14,8 @@ public class PhoneChat : MonoBehaviour
     public Sprite[] responseEmoji2;
     public Sprite[] responseEmoji3;
     public Sprite[] responseEmoji4;
-
+    public LevelLoader levelLoader;
+    private int chattime;
     private bool hasClicked = false;  // 标识是否已经点击过
 
     // Called when an emoji button is pressed
@@ -71,6 +73,11 @@ public class PhoneChat : MonoBehaviour
 
     void AddEmojiMessage(Sprite emojiSprite, bool isPlayer)
     {
+        chattime++;
+        if (chattime > 10)
+        {
+            levelLoader.LoadNextLevel();
+        }
         GameObject prefabToUse = isPlayer ? emojiMessagePrefabRight : emojiMessagePrefabLeft;
         GameObject newMessage = Instantiate(prefabToUse, messageArea);
         newMessage.SetActive(true);

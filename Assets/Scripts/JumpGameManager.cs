@@ -12,7 +12,7 @@ public class JumpGameManager : MonoBehaviour
     public float spawnInterval;
     public float speedMultiplier;
     public Text distanceUI;
-    private float distance;
+    public float distance;
     public LevelLoader levelLoader;
 
     // 用于存储三个随机选择的 Sprites
