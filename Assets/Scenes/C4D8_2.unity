@@ -1405,7 +1405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3868872608073055420, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
@@ -1715,6 +1715,7 @@ MonoBehaviour:
   text5: {fileID: 737532421}
   computerFadeOut: {fileID: 0}
   FadeOutTime: 1
+  levelLoader: {fileID: 827826197}
 --- !u!1 &1218823457
 GameObject:
   m_ObjectHideFlags: 0

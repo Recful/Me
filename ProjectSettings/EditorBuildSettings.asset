@@ -110,4 +110,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/C3D7_1.unity
     guid: 590a9fe25361e5a4a982b41f9cec0b64
+  - enabled: 1
+    path: Assets/Scenes/C3D7_2.unity
+    guid: 36beeac90c1966c4aa5002f85933abb1
+  - enabled: 1
+    path: Assets/Scenes/C4D8_1.unity
+    guid: b3bb6a1e832de7245af6f7d5b267a746
+  - enabled: 1
+    path: Assets/Scenes/C4D8_2.unity
+    guid: fefe9ad19f51b36468a3d4cc35073121
+  - enabled: 1
+    path: Assets/Scenes/C4D8_3.unity
+    guid: 7f9c6c72756370a43853e3bbfe5a2637
+  - enabled: 1
+    path: Assets/Scenes/C4D8_4.unity
+    guid: 26c847e7a85aaf04c8e0eb507d78f13c
   m_configObjects: {}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ComputerUIFunction2 : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class ComputerUIFunction2 : MonoBehaviour
     [Header("Animation")]
     public Animator computerFadeOut;
     public float FadeOutTime = 1f;
+    public LevelLoader levelLoader;
     
 
     // Start is called before the first frame update
@@ -127,6 +129,7 @@ public class ComputerUIFunction2 : MonoBehaviour
     {
         playerName5.SetActive(true);
         nameBlank5.SetActive(false);
+        levelLoader.LoadNextLevel();
         //Invoke("NextScreen5", 2f);
     }
     

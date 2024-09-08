@@ -207,6 +207,22 @@ public class interactable2 : MonoBehaviour
             levelLoader.LoadNextLevel();
         }
 
+        //fall off the roof movie
+
+        // Chapter 4 Day 8: C4D8_1
+        if(Input.GetKeyDown(KeyCode.E) == true && Getname.currentSpeaker == "Nate" && enterNextSceneAllowed == true && SceneManager.GetActiveScene().buildIndex == 36)
+        {
+            levelLoader.LoadNextLevel();
+        }
+
+        //Phone find Nate2 C4D8_2
+
+        //Envy Nate2 Life C4D8_3
+
+        //Final
+        
+
+
     }
     void showComet()
     {
