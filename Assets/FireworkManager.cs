@@ -31,6 +31,11 @@ public class FireworkManager : MonoBehaviour
         }
     }
 
+    public void playFireworks()
+    {
+        StartCoroutine(PlayFireworks());
+    }
+
     private IEnumerator PlayFireworks()
     {
         for (int i = 0; i < 5; i++){
