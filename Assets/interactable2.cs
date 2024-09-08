@@ -35,6 +35,8 @@ public class interactable2 : MonoBehaviour
     public float showBlackTime = 1f;
     public float returnToMainTime = 1f;
 
+    public DialogueManager dialogueManager;
+
     private bool enterNextSceneAllowed = false;
 
     //only for the music
@@ -216,7 +218,7 @@ public class interactable2 : MonoBehaviour
         }
 
         //Phone find Nate2 C4D8_2
-
+        
         //Envy Nate2 Life C4D8_3
 
         //Final

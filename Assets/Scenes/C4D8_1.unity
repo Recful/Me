@@ -847,7 +847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press E to enter
+  m_Text: Press E to check FoundMe
 --- !u!222 &184020106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2086,6 +2086,142 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &344247494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344247497}
+  - component: {fileID: 344247496}
+  - component: {fileID: 344247498}
+  - component: {fileID: 344247495}
+  m_Layer: 0
+  m_Name: MonologueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &344247495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344247494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43907cf56081b7b49abdc01c3f4e0212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    sentences:
+    - Wh...Where am I...
+    - Ehh...My head hurts so bad...
+    - What happened last night? I remembered...
+    - Did Etan push me off the roof?!
+    - Something's wrong... Where's my phone? I need to check the time. What time
+      is it?
+    - And Etan... who is he really?
+    - '[Nate pulls out his phone and looks at the time.]'
+    - No way! The time... it's gone back? This is the day I registered for that strange
+      dating app...
+    - How is this even possible? Could it be that app... or the comet that caused
+      this?
+    - I need to find out the truth. I have to check that app...
+--- !u!61 &344247496
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344247494}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &344247497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344247494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.93, y: -2.08, z: -2}
+  m_LocalScale: {x: 1.5602, y: 1.5602, z: 1.5602}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344247498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344247494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed981836280eac48a0fea4962d39a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionUI: {fileID: 2078420834}
+  UIExit: {fileID: 2078420836}
+  UIExitTime: 1
+  startDialogue: {fileID: 344247495}
+  Getname: {fileID: 1645179090}
+  dialogueUI: {fileID: 1414022103}
+  conversationBubble: {fileID: 0}
+  levelLoader: {fileID: 1398742902}
+  SleepUIBlack: {fileID: 0}
+  cometCover: {fileID: 0}
+  cometTrigger: {fileID: 0}
+  Chapter1EndUI: {fileID: 0}
+  endingTrigger: {fileID: 0}
+  notificationUI: {fileID: 0}
+  showingNotification: {fileID: 0}
+  blackBackgroud: {fileID: 0}
+  background: {fileID: 0}
+  notificationSound: {fileID: 0}
+  cometSound: {fileID: 0}
+  showCometTime: 1
+  CometAnimationTime: 1
+  showComputerTime: 1
+  showChatTime: 1
+  showBlackTime: 1
+  returnToMainTime: 1
+  dialogueManager: {fileID: 1645179090}
+  hit: 0
 --- !u!1 &347372048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3797,7 +3933,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8338639911503453856, guid: 1b996314d0718ae4897a0797fdc8de33, type: 3}
   m_PrefabInstance: {fileID: 1456216085}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1414022103}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -4351,7 +4487,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ab5a8777063f0d940b89372a0ce12050, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 15d838211a759a64e9b9be3524940038, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6180,6 +6316,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57b281e024627a4eb4fbc3b30244524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1414022103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8338639911503453858, guid: 1b996314d0718ae4897a0797fdc8de33, type: 3}
+  m_PrefabInstance: {fileID: 1456216085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1421251641
 GameObject:
   m_ObjectHideFlags: 0
@@ -7827,7 +7968,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1ba0dc6c8aab3dc4499eb4f05da838dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5dd0c39e89b64141bd0340e66fe9fb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9286,7 +9427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2078420835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9658,6 +9799,7 @@ MonoBehaviour:
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1
+  dialogueManager: {fileID: 0}
   hit: 0
 --- !u!114 &2103700710
 MonoBehaviour:
