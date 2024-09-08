@@ -10,7 +10,10 @@ public class TimelineSignalReceiver : MonoBehaviour
     public DialogueTrigger dialogueTrigger;
     public DialogueManager dialogueManager;
     public FireworkManager fireworkManager;
+    public MusicController musicController;
+    public GameObject choicePanel;
     [SerializeField] private bool playedAnimation = false;
+    [SerializeField] private int pauseCount = 0;
     
 
     private void Start()
@@ -51,6 +54,27 @@ public class TimelineSignalReceiver : MonoBehaviour
         }
     }
 
+    public void musicChange()
+    {
+        if(!musicController)
+        {
+            return;
+        }
+
+        if(pauseCount == 1)
+        {
+            musicController.changeMusic1();
+        }
+        if(pauseCount == 2)
+        {
+            musicController.changeMusic1();
+        }
+        if(pauseCount == 3)
+        {
+            musicController.changeMusic1();
+        }
+    }
+
     public void dialogStart()
     {
         if(dialogueTrigger)
@@ -58,13 +82,16 @@ public class TimelineSignalReceiver : MonoBehaviour
             dialogueTrigger.TriggerDialogue();
         }
     }
+
     public void PauseTimeLine()
     {
         
         director.playableGraph.GetRootPlayable(0).SetSpeed(0);
-        pauseTimeLineWithoutAudio();
+        //pauseTimeLineWithoutAudio();
         dialogStart();
         fireworkAnimation();
+
+        pauseCount += pauseCount;
     }
 
     public void ContinueTimeline()

@@ -8,6 +8,7 @@ public class MusicController : MonoBehaviour
     public AudioSource SelectionTimeToFinalMusic;
     public AudioSource EndingMusic;
     public AudioSource DingSound;
+    public TimelineSignalReceiver timelineSignalReceiver;
 
     public float fadeDuration = 2.5f;
 
@@ -22,27 +23,46 @@ public class MusicController : MonoBehaviour
 
     void Update()
     {
-        // 示例：按下 A 键触发剧情点 A
-        if (Input.GetKeyDown(KeyCode.A) && currentMusic == FinalMusicBegining)
-        {
-            StartCoroutine(SwitchMusic(FinalMusicBegining, selectionTimeLoopMusic));
-            currentMusic = selectionTimeLoopMusic;
-        }
+        // // 示例：按下 A 键触发剧情点 A
+        // if (Input.GetKeyDown(KeyCode.A) && currentMusic == FinalMusicBegining)
+        // {
+        //     StartCoroutine(SwitchMusic(FinalMusicBegining, selectionTimeLoopMusic));
+        //     currentMusic = selectionTimeLoopMusic;
+        // }
 
-        // 示例：按下 B 键触发剧情点 B
-        if (Input.GetKeyDown(KeyCode.B) && currentMusic == selectionTimeLoopMusic)
-        {
-            StartCoroutine(SwitchMusic(selectionTimeLoopMusic, SelectionTimeToFinalMusic));
+        // // 示例：按下 B 键触发剧情点 B
+        // if (Input.GetKeyDown(KeyCode.B) && currentMusic == selectionTimeLoopMusic)
+        // {
+        //     StartCoroutine(SwitchMusic(selectionTimeLoopMusic, SelectionTimeToFinalMusic));
+        //     currentMusic = SelectionTimeToFinalMusic;
+        // }
+
+        // // 示例：按下 C 键触发剧情点 C
+        // if (Input.GetKeyDown(KeyCode.C) && currentMusic == SelectionTimeToFinalMusic)
+        // {
+        //     DingSound.Play();
+        //     StartCoroutine(SwitchMusic(SelectionTimeToFinalMusic, EndingMusic));
+        //     currentMusic = EndingMusic;
+        // }
+    }
+
+    public void changeMusic1()
+    {
+        StartCoroutine(SwitchMusic(FinalMusicBegining, selectionTimeLoopMusic));
+        currentMusic = selectionTimeLoopMusic;
+    }
+
+    public void changeMusic2()
+    {
+        StartCoroutine(SwitchMusic(selectionTimeLoopMusic, SelectionTimeToFinalMusic));
             currentMusic = SelectionTimeToFinalMusic;
-        }
+    }
 
-        // 示例：按下 C 键触发剧情点 C
-        if (Input.GetKeyDown(KeyCode.C) && currentMusic == SelectionTimeToFinalMusic)
-        {
-            DingSound.Play();
+    public void changeMusic3()
+    {
+        DingSound.Play();
             StartCoroutine(SwitchMusic(SelectionTimeToFinalMusic, EndingMusic));
             currentMusic = EndingMusic;
-        }
     }
 
     // 音乐淡入淡出切换的协程
