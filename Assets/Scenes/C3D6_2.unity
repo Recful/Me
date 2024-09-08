@@ -211,7 +211,7 @@ MonoBehaviour:
         m_MethodName: OnEmojiButtonClicked10
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: b9f9fca4155b4d542a790bb5683f74ea, type: 3}
+          m_ObjectArgument: {fileID: 21300000, guid: ea40b1f01ff184d4aa5d410fea8b1622, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b9f9fca4155b4d542a790bb5683f74ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea40b1f01ff184d4aa5d410fea8b1622, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3867,7 +3867,7 @@ MonoBehaviour:
   responseEmoji9:
   - {fileID: 21300000, guid: ef8cb6fe89075134e987e9a72819939a, type: 3}
   responseEmoji10:
-  - {fileID: 21300000, guid: b9f9fca4155b4d542a790bb5683f74ea, type: 3}
+  - {fileID: 21300000, guid: ea40b1f01ff184d4aa5d410fea8b1622, type: 3}
   responseEmoji11:
   - {fileID: 21300000, guid: ea40b1f01ff184d4aa5d410fea8b1622, type: 3}
   - {fileID: 21300000, guid: cd6d8534378dcf04c80dd917b20e7a11, type: 3}
