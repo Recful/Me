@@ -2033,7 +2033,7 @@ MonoBehaviour:
   - {fileID: 836874986}
   - {fileID: 1503971698}
   - {fileID: 528222928}
-  spawnObject: {fileID: 5235904313527304836, guid: 3c60d36a3f76b2b4ead178d070e14b9e, type: 3}
+  spawnObject: {fileID: 5235904313527304836, guid: 08c4e25881b858748a6970164a3d3c4c, type: 3}
   timer: 0
   spawnInterval: 6
   speedMultiplier: 0
