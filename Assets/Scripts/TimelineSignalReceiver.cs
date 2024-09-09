@@ -54,6 +54,10 @@ public class TimelineSignalReceiver : MonoBehaviour
         }
     }
 
+    public void activePanel()
+    {
+
+    }
     public void musicChange()
     {
         if(!musicController)
@@ -91,6 +95,7 @@ public class TimelineSignalReceiver : MonoBehaviour
         dialogStart();
         fireworkAnimation();
 
+        musicChange();
         pauseCount += pauseCount;
     }
 

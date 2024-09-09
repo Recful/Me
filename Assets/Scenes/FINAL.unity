@@ -2366,7 +2366,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 359535303}
           m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: ContinueTimeline
+          m_MethodName: PauseTimeLine
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2380,7 +2380,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 359535303}
           m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: PauseTimeLine
+          m_MethodName: ContinueTimeline
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2406,8 +2406,8 @@ MonoBehaviour:
   dialogueTrigger: {fileID: 0}
   dialogueManager: {fileID: 1645179090}
   fireworkManager: {fileID: 0}
-  musicController: {fileID: 0}
-  choicePanel: {fileID: 0}
+  musicController: {fileID: 813064041}
+  choicePanel: {fileID: 438137601}
   playedAnimation: 0
   pauseCount: 0
 --- !u!4 &359535304
@@ -2635,6 +2635,7 @@ GameObject:
   - component: {fileID: 438137602}
   - component: {fileID: 438137604}
   - component: {fileID: 438137603}
+  - component: {fileID: 438137605}
   m_Layer: 5
   m_Name: Final Choice Panel
   m_TagString: Untagged
@@ -2701,6 +2702,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438137601}
   m_CullTransparentMesh: 1
+--- !u!225 &438137605
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438137601}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &439449585 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1894811933981553292, guid: fe2bdcd69caf5f64fb8c8b70faa82461, type: 3}
@@ -10652,6 +10665,7 @@ MonoBehaviour:
   showChatTime: 1
   showBlackTime: 1
   returnToMainTime: 1
+  dialogueManager: {fileID: 0}
   hit: 0
 --- !u!114 &2103700710
 MonoBehaviour:
