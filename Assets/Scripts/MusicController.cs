@@ -8,7 +8,6 @@ public class MusicController : MonoBehaviour
     public AudioSource SelectionTimeToFinalMusic;
     public AudioSource EndingMusic;
     public AudioSource DingSound;
-    public TimelineSignalReceiver timelineSignalReceiver;
 
     public float fadeDuration = 2.5f;
 
@@ -48,14 +47,15 @@ public class MusicController : MonoBehaviour
 
     public void changeMusic1()
     {
+        
         StartCoroutine(SwitchMusic(FinalMusicBegining, selectionTimeLoopMusic));
         currentMusic = selectionTimeLoopMusic;
     }
 
     public void changeMusic2()
     {
-        StartCoroutine(SwitchMusic(selectionTimeLoopMusic, SelectionTimeToFinalMusic));
-            currentMusic = SelectionTimeToFinalMusic;
+        StartCoroutine(SwitchMusic(selectionTimeLoopMusic, EndingMusic));
+            currentMusic = EndingMusic;
     }
 
     public void changeMusic3()
@@ -94,11 +94,4 @@ public class MusicController : MonoBehaviour
         fromMusic.Stop();
     }
 
-    public void checkIfHasNextMusic()
-    {
-        if(currentMusic.time >= currentMusic.clip.length)
-        {
-            
-        }
-    }
 }

@@ -125,4 +125,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/C4D8_4.unity
     guid: 26c847e7a85aaf04c8e0eb507d78f13c
+  - enabled: 1
+    path: Assets/Scenes/FINAL.unity
+    guid: 22838e063ba47fb4b86dee2949e823cd
+  - enabled: 1
+    path: Assets/Scenes/FinalEnding2.unity
+    guid: e37298c892c7e8f4f8a6a2efc64296e0
   m_configObjects: {}

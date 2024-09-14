@@ -22,6 +22,11 @@ public class VideoSceneManager : MonoBehaviour
         currentTime = (float) videoPlayer.GetComponent<VideoPlayer>().time;
         if(currentTime >= videoTime)
         {
+            if(videoTime > 16.75)
+            {
+                levelLoader.ToMainTitleScene();
+            }
+
             levelLoader.LoadNextLevel();
         }
     }

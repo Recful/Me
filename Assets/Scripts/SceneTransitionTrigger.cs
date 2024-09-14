@@ -14,5 +14,10 @@ public class SceneTransitionTrigger : MonoBehaviour
             levelLoader.GetComponent<LevelLoader>().LoadNextLevel();
         }
     }
+
+    public void toMainScene()
+    {
+        levelLoader.GetComponent<LevelLoader>().BackToMainTitleScene();
+    }
     
 }

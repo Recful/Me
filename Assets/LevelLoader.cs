@@ -31,4 +31,17 @@ public class LevelLoader : MonoBehaviour
         //Load scene
         SceneManager.LoadScene(LevelIndex);
     }
+
+    public void ToMainTitleScene()
+    {
+        if(SceneManager.GetActiveScene().buildIndex + 1 >= SceneManager.sceneCountInBuildSettings)
+        {
+            StartCoroutine(LoadLevel(0));
+        }
+    }
+
+    public void BackToMainTitleScene()
+    {
+        StartCoroutine(LoadLevel(0));
+    }
 }

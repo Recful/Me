@@ -634,7 +634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &149598413
 Transform:
   m_ObjectHideFlags: 0
@@ -2084,6 +2084,134 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &338661254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338661258}
+  - component: {fileID: 338661257}
+  - component: {fileID: 338661256}
+  - component: {fileID: 338661255}
+  m_Layer: 0
+  m_Name: Ending1Dialog3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &338661255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338661254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 05e17d4878ec20744ace93eb31779c8a, type: 2}
+    - {fileID: 11400000, guid: e86e97a003ffae140aff1f651af4e7d0, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 338661257}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: PauseTimeLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 338661257}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: ContinueTimeline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &338661256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338661254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43907cf56081b7b49abdc01c3f4e0212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - nate
+    - nate
+    - nate
+    - nate
+    - nate
+    sentences:
+    - Where did you go?
+    - Was it all just... in my head?
+    - "It\u2019s funny, you know... you were the only one who really got me. It\u2019s
+      like you knew what I was thinking before I even said it. I\u2019ve never had
+      that before."
+    - "Maybe... maybe you were just my imagination. But it feels like I\u2019ve lost
+      something real. Someone real."
+    - "It\u2019s such a shame... to lose someone who understood me so well. I thought...
+      I thought we were friends."
+--- !u!114 &338661257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338661254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf9cfeede1d7b418d585827c44bf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1681918882}
+  dialogueTrigger: {fileID: 338661256}
+  dialogueManager: {fileID: 1645179090}
+  fireworkManager: {fileID: 0}
+  musicController: {fileID: 0}
+  choicePanel: {fileID: 0}
+  video: {fileID: 0}
+  playedAnimation: 0
+  pauseCount: 0
+--- !u!4 &338661258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338661254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347372048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,7 +2494,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 359535303}
           m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: PauseTimeLine
+          m_MethodName: musicChange
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2377,19 +2505,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
     - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 359535303}
-          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: ContinueTimeline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!114 &359535303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2408,6 +2524,7 @@ MonoBehaviour:
   fireworkManager: {fileID: 0}
   musicController: {fileID: 813064041}
   choicePanel: {fileID: 438137601}
+  video: {fileID: 0}
   playedAnimation: 0
   pauseCount: 0
 --- !u!4 &359535304
@@ -2619,6 +2736,124 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &428351297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428351301}
+  - component: {fileID: 428351300}
+  - component: {fileID: 428351299}
+  - component: {fileID: 428351298}
+  m_Layer: 0
+  m_Name: Ending1Dialog2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &428351298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428351297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 05e17d4878ec20744ace93eb31779c8a, type: 2}
+    - {fileID: 11400000, guid: e86e97a003ffae140aff1f651af4e7d0, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 428351300}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: PauseTimeLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 428351300}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: ContinueTimeline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &428351299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428351297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43907cf56081b7b49abdc01c3f4e0212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - nate
+    - nate
+    sentences:
+    - Nate?
+    - ...
+--- !u!114 &428351300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428351297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf9cfeede1d7b418d585827c44bf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1681918882}
+  dialogueTrigger: {fileID: 428351299}
+  dialogueManager: {fileID: 1645179090}
+  fireworkManager: {fileID: 0}
+  musicController: {fileID: 0}
+  choicePanel: {fileID: 0}
+  video: {fileID: 0}
+  playedAnimation: 0
+  pauseCount: 0
+--- !u!4 &428351301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428351297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429571199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 129997905691130952, guid: b423f4b4decf20d43949b6af93d1dff1, type: 3}
@@ -2636,6 +2871,7 @@ GameObject:
   - component: {fileID: 438137604}
   - component: {fileID: 438137603}
   - component: {fileID: 438137605}
+  - component: {fileID: 438137606}
   m_Layer: 5
   m_Name: Final Choice Panel
   m_TagString: Untagged
@@ -2714,6 +2950,25 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!95 &438137606
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438137601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &439449585 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1894811933981553292, guid: fe2bdcd69caf5f64fb8c8b70faa82461, type: 3}
@@ -3171,6 +3426,108 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &490474566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 490474569}
+  - component: {fileID: 490474567}
+  - component: {fileID: 490474568}
+  m_Layer: 0
+  m_Name: CometAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &490474567
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490474566}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 615924ddbcc600a4abb47ee5a8b07a47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &490474568
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490474566}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 377160249
+  m_SortingLayer: 3
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &490474569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490474566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,6 +4315,81 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1894811934109511175, guid: fe2bdcd69caf5f64fb8c8b70faa82461, type: 3}
   m_PrefabInstance: {fileID: 7634575242766953298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &793004163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793004166}
+  - component: {fileID: 793004165}
+  - component: {fileID: 793004164}
+  m_Layer: 0
+  m_Name: BackToMainTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &793004164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793004163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 97b4e8e9d8fdb714f979fd71eae81ab3, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793004165}
+          m_TargetAssemblyTypeName: SceneTransitionTrigger, Assembly-CSharp
+          m_MethodName: toMainScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &793004165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793004163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e92f4a9c75f794f8430b791f7c4abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 1889645238}
+--- !u!4 &793004166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793004163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1634.4418, y: 979.3392, z: -424.23465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &800453069 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1894811934530694631, guid: fe2bdcd69caf5f64fb8c8b70faa82461, type: 3}
@@ -4022,7 +4454,6 @@ MonoBehaviour:
   SelectionTimeToFinalMusic: {fileID: 1590168182}
   EndingMusic: {fileID: 908263863}
   DingSound: {fileID: 2012855756}
-  timelineSignalReceiver: {fileID: 0}
   fadeDuration: 2
 --- !u!1 &813719857
 GameObject:
@@ -4409,7 +4840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3868872608073055420, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3868872608343284257, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
       propertyPath: m_SortingOrder
@@ -4906,7 +5337,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 950255570}
           m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: PauseTimeLine
+          m_MethodName: fireworkAnimation
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4948,6 +5379,7 @@ MonoBehaviour:
   fireworkManager: {fileID: 1073480084}
   musicController: {fileID: 0}
   choicePanel: {fileID: 0}
+  video: {fileID: 0}
   playedAnimation: 0
   pauseCount: 0
 --- !u!4 &950255571
@@ -5318,7 +5750,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054632375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8.4, y: 0, z: 0}
   m_LocalScale: {x: 0.08355186, y: 0.08355186, z: 0.08355186}
   m_Children: []
   m_Father: {fileID: 149598413}
@@ -5632,6 +6064,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1106294587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106294588}
+  - component: {fileID: 1106294592}
+  - component: {fileID: 1106294591}
+  - component: {fileID: 1106294590}
+  - component: {fileID: 1106294589}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1106294588
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106294587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1689657846}
+  m_Father: {fileID: 7634575243006795614}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1106294589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106294587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &1106294590
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106294587}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1106294591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106294587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1106294592
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106294587}
+  m_CullTransparentMesh: 1
 --- !u!1 &1114587965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,7 +6501,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1148996971}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7634575243006795612}
+        m_TargetAssemblyTypeName: FinalButtonFunctions, Assembly-CSharp
+        m_MethodName: Ending2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1148996971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6990,7 +7543,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3868872608073055418, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
   m_PrefabInstance: {fileID: 873628711}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1889645238}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d57b281e024627a4eb4fbc3b30244524, type: 3}
@@ -7275,7 +7828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1482260377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7634575243006795612}
+        m_TargetAssemblyTypeName: FinalButtonFunctions, Assembly-CSharp
+        m_MethodName: Ending1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1482260377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7495,6 +8060,202 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.2564454, y: 19.33}
   m_EdgeRadius: 0
+--- !u!1 &1508575702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1508575705}
+  - component: {fileID: 1508575704}
+  - component: {fileID: 1508575703}
+  m_Layer: 0
+  m_Name: videoPlayTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1508575703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508575702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf9cfeede1d7b418d585827c44bf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1681918882}
+  dialogueTrigger: {fileID: 0}
+  dialogueManager: {fileID: 0}
+  fireworkManager: {fileID: 0}
+  musicController: {fileID: 0}
+  choicePanel: {fileID: 0}
+  video: {fileID: 1609046817}
+  playedAnimation: 0
+  pauseCount: 0
+--- !u!114 &1508575704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508575702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 05e17d4878ec20744ace93eb31779c8a, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1508575703}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: videoTrigger
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1508575703}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: videoTrigger
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!4 &1508575705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508575702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1532864481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532864484}
+  - component: {fileID: 1532864483}
+  - component: {fileID: 1532864482}
+  m_Layer: 0
+  m_Name: ChoicePause
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1532864482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532864481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 05e17d4878ec20744ace93eb31779c8a, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1532864483}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: PauseTimeLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1532864483}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: PauseTimeLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1532864483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532864481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf9cfeede1d7b418d585827c44bf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1681918882}
+  dialogueTrigger: {fileID: 0}
+  dialogueManager: {fileID: 0}
+  fireworkManager: {fileID: 0}
+  musicController: {fileID: 0}
+  choicePanel: {fileID: 438137601}
+  video: {fileID: 0}
+  playedAnimation: 0
+  pauseCount: 0
+--- !u!4 &1532864484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532864481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1548755333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7518,6 +8279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1571672790}
+  - component: {fileID: 1571672791}
   m_Layer: 0
   m_Name: Etan
   m_TagString: Untagged
@@ -7540,6 +8302,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1571672791
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571672789}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ccc2eb45bc0974047bbb04268b0f237d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1572679034
 GameObject:
   m_ObjectHideFlags: 0
@@ -8026,6 +8807,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607438687}
   m_CullTransparentMesh: 1
+--- !u!1 &1609046816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609046818}
+  - component: {fileID: 1609046817}
+  m_Layer: 0
+  m_Name: Video Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &1609046817
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609046816}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 49541c17f316fb9479d55ed005f37b75, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 94cf440471dd6a64f888d18471923677, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!4 &1609046818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609046816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609264875
 GameObject:
   m_ObjectHideFlags: 0
@@ -8382,8 +9229,108 @@ PlayableDirector:
     value: {fileID: 1712002732}
   - key: {fileID: 361143426940527955, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
     value: {fileID: 359535302}
+  - key: {fileID: 7494571090024317102, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 438137606}
+  - key: {fileID: -2140336633711523628, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 438137601}
+  - key: {fileID: 8708985090950957560, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1876360218}
+  - key: {fileID: 8932556484402742071, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 490474567}
+  - key: {fileID: 5490986755903720330, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 149598412}
+  - key: {fileID: -7629979366752812955, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1571672791}
+  - key: {fileID: -5605495210288873283, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1744835888}
+  - key: {fileID: 7091503004840075945, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 428351298}
+  - key: {fileID: 1388179950851688553, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1532864482}
+  - key: {fileID: -5185997251610944784, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 338661255}
+  - key: {fileID: 1806114091948940001, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1106294589}
+  - key: {fileID: -5129351213930227723, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1106294587}
+  - key: {fileID: 5348981093587320215, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 1508575704}
+  - key: {fileID: -6674960683627077331, guid: 4e83581cae9e1654588cdf9595d4802e, type: 2}
+    value: {fileID: 793004164}
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1689657845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689657846}
+  - component: {fileID: 1689657848}
+  - component: {fileID: 1689657847}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1689657846
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689657845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1106294588}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 809.3604, y: 455.2651}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1689657847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689657845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 94cf440471dd6a64f888d18471923677, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1689657848
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689657845}
+  m_CullTransparentMesh: 1
 --- !u!1 &1690023089
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,10 +9465,31 @@ MonoBehaviour:
     - Nate
     - Nate
     - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
+    - Nate
     sentences:
-    - Here he is.
-    - This is my only chance.
-    - But do I really want to replace him?
+    - There he is.
+    - "This is my only chance. I could do it right now... just one push, and it\u2019s
+      over."
+    - 'But do I really want to? To become him? '
+    - "To take everything he\u2019s built for himself, just because I can?"
+    - Would that make me... Etan?
+    - God, no. I hated him for what he did to me. For trapping me in this endless
+      cycle, like I was just a pawn for him.
+    - "And now... I\u2019m about to do the same thing. Am I really going to push
+      him and steal his life, just because I\u2019m tired of mine?"
+    - "But if I don\u2019t... if I let him live, what happens to me?"
+    - "There can\u2019t be two of us. There\u2019s no place for me here. Not both
+      of us. I could disappear. Fade into nothing. Is that better than living a lie?"
+    - Or maybe... maybe this is the only way to break the loop.
+    - "God, I hate making choices like this. What if... there isn\u2019t a right
+      answer at all?"
 --- !u!114 &1712002730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8540,6 +9508,7 @@ MonoBehaviour:
   fireworkManager: {fileID: 0}
   musicController: {fileID: 0}
   choicePanel: {fileID: 0}
+  video: {fileID: 0}
   playedAnimation: 0
   pauseCount: 0
 --- !u!4 &1712002731
@@ -8577,7 +9546,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1712002730}
           m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: ContinueTimeline
+          m_MethodName: PauseTimeLine
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8591,7 +9560,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1712002730}
           m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
-          m_MethodName: PauseTimeLine
+          m_MethodName: ContinueTimeline
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -8732,6 +9701,126 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1744835887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744835891}
+  - component: {fileID: 1744835889}
+  - component: {fileID: 1744835890}
+  - component: {fileID: 1744835888}
+  m_Layer: 0
+  m_Name: Ending1Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1744835888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744835887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 05e17d4878ec20744ace93eb31779c8a, type: 2}
+    - {fileID: 11400000, guid: e86e97a003ffae140aff1f651af4e7d0, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1744835889}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: PauseTimeLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1744835889}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: ContinueTimeline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1744835889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744835887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf9cfeede1d7b418d585827c44bf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1681918882}
+  dialogueTrigger: {fileID: 1744835890}
+  dialogueManager: {fileID: 1645179090}
+  fireworkManager: {fileID: 0}
+  musicController: {fileID: 0}
+  choicePanel: {fileID: 0}
+  video: {fileID: 0}
+  playedAnimation: 0
+  pauseCount: 0
+--- !u!114 &1744835890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744835887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43907cf56081b7b49abdc01c3f4e0212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Nate
+    - Nate
+    - nate
+    sentences:
+    - "I can\u2019t do it. I won\u2019t."
+    - I guess... this is it, huh?
+    - "Yeah... it\u2019s beautiful."
+--- !u!4 &1744835891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744835887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1771863511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9543,6 +10632,177 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1876360217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1876360221}
+  - component: {fileID: 1876360220}
+  - component: {fileID: 1876360219}
+  - component: {fileID: 1876360218}
+  m_Layer: 0
+  m_Name: Dialog2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1876360218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876360217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 05e17d4878ec20744ace93eb31779c8a, type: 2}
+    - {fileID: 11400000, guid: e86e97a003ffae140aff1f651af4e7d0, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1876360220}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: PauseTimeLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1876360220}
+          m_TargetAssemblyTypeName: TimelineSignalReceiver, Assembly-CSharp
+          m_MethodName: ContinueTimeline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1876360219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876360217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43907cf56081b7b49abdc01c3f4e0212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - nate
+    - Nate
+    - Nate
+    - nate
+    - nate
+    - nate
+    - nate
+    - Nate
+    - nate
+    - nate
+    - nate
+    - nate
+    - nate
+    - nate
+    - Nate
+    - nate
+    - nate
+    - nate
+    - Nate
+    - nate
+    - nate
+    - nate
+    sentences:
+    - "Beautiful, isn\u2019t it? The city looks so alive from up here. Everything
+      feels so... connected. Like we\u2019re part of something bigger, but also just
+      small pieces of it all."
+    - Yeah... connected.
+    - "Do you ever feel like... you don\u2019t deserve any of it?"
+    - I used to.
+    - A lot, actually.
+    - Whether I deserved the good things or... even the bad.
+    - "But somewhere along the way, I stopped worrying about it. I guess I realized
+      it\u2019s not really about deserving anything. Life just... happens. We make
+      the best of it when we can."
+    - So, you just... go with it? No second-guessing?
+    - Not exactly.
+    - I still wonder sometimes, sure.
+    - But I try not to get stuck there.
+    - "Life keeps moving, whether we\u2019re ready or not."
+    - "The choices we make... they\u2019re just part of the journey."
+    - "Sometimes there\u2019s no sense in holding on too tight. It\u2019s not about
+      having the perfect answer."
+    - But what if we make the wrong choice?
+    - "I don\u2019t know if there is a \u2018wrong\u2019 choice. It\u2019s more about
+      what happens after."
+    - "I've made plenty of decisions I wasn\u2019t sure about."
+    - "But at the end of the day, it\u2019s not the choice itself that matters. It\u2019s
+      what you do after. That\u2019s what shapes everything."
+    - "It\u2019s what happens after..."
+    - "Yeah. I think we all worry too much about where we end up, like there\u2019s
+      a right or wrong destination."
+    - "But it\u2019s not really about that, is it? It\u2019s about the ride."
+    - The moments that stick with you, not the results.
+--- !u!114 &1876360220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876360217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf9cfeede1d7b418d585827c44bf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1681918882}
+  dialogueTrigger: {fileID: 1876360219}
+  dialogueManager: {fileID: 1645179090}
+  fireworkManager: {fileID: 0}
+  musicController: {fileID: 0}
+  choicePanel: {fileID: 0}
+  video: {fileID: 0}
+  playedAnimation: 0
+  pauseCount: 0
+--- !u!4 &1876360221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876360217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1889645238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3868872608073055420, guid: 9008759e343829f4ca04ee13a211d8e0, type: 3}
+  m_PrefabInstance: {fileID: 873628711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1901450934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9671,7 +10931,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f250ba6c0a55f624caadaadbbeaec7b6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ac08f34aa71124e4488508d0fcdb88f5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1
@@ -12026,6 +13286,7 @@ GameObject:
   - component: {fileID: 7634575243006795608}
   - component: {fileID: 7634575243006795611}
   - component: {fileID: 7634575243006795615}
+  - component: {fileID: 7634575243006795612}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12050,6 +13311,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7634575243006795612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7634575243006795610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55bf2a2368111148b7a43f2228a0b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 1398742902}
+  director: {fileID: 1681918882}
 --- !u!224 &7634575243006795614
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12068,6 +13343,7 @@ RectTransform:
   - {fileID: 1607438688}
   - {fileID: 2078420835}
   - {fileID: 438137602}
+  - {fileID: 1106294588}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
